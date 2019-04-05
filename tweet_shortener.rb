@@ -7,7 +7,7 @@ end
  
  def word_substituter(string) 
    tweet = string.split
-   tweet.each do |word|
+   tweet.map do |word|
      dictionary.map do |key,value|
        if word == key
          word.replace value
