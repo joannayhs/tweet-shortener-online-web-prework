@@ -23,7 +23,7 @@ end
 
 def selective_tweet_shortener(string)
 tweet = string.to_s
-if tweet.length >= 140
+if tweet >= 140
   puts word_substituter(tweet)
 else
   puts string
